@@ -123,7 +123,7 @@ export default function Experience() {
           transition={{ duration: 0.8 }}
           className="mb-16"
         >
-          <span className="font-mono text-[11px] tracking-[0.3em] uppercase text-accent mb-4 block">
+          <span className="font-mono text-[11px] tracking-[0.3em] uppercase text-accent mb-4 block -mt-16">
             03 — Career Timeline
           </span>
           <h2 className="font-display text-5xl md:text-7xl font-light text-paper leading-tight">
@@ -152,7 +152,7 @@ export default function Experience() {
             <p className="font-display text-2xl text-paper font-light">Master of Computer Applications (MCA)</p>
           </div>
           <span className="font-mono text-[13px] text-gold/70 bg-gold/5 border border-gold/15 px-4 py-2 rounded-full">
-            CGPA: 8.76 / 10
+            CGPA: 9.56 / 10
           </span>
         </motion.div>
       </div>

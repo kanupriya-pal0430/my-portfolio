@@ -126,7 +126,6 @@ export default function Skills() {
           <h2 className="font-display text-5xl md:text-7xl font-light text-paper leading-tight">
             What I Build
             <br />
-            <span className="text-muted italic">With</span>
           </h2>
         </motion.div>
 

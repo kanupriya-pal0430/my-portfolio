@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kanupriya Pal — Senior Frontend Engineer",
+  title: "Kanupriya Pal | Senior Frontend Developer (React, Next.js, Microfrontend)",
   description:
     "Senior Frontend Engineer with 5+ years building scalable React.js & Next.js applications. Expert in microfrontend architecture, performance optimization & design systems.",
   keywords: [
@@ -13,6 +13,12 @@ export const metadata: Metadata = {
     "Microfrontend",
     "Remote",
     "Kanupriya Pal",
+    "Frontend Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Microfrontend Architecture",
+    "Frontend Developer India",
+    "Senior React Developer",
   ],
   authors: [{ name: "Kanupriya Pal" }],
   openGraph: {

@@ -23,26 +23,29 @@ export default function Contact() {
       </div>
 
       <div className="max-w-6xl mx-auto relative">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="mb-16"
-        >
-          <span className="font-mono text-[11px] tracking-[0.3em] uppercase text-accent mb-4 block">
-            05 — Get In Touch
-          </span>
-          <h2 className="font-display text-5xl md:text-7xl font-light text-paper leading-tight">
-            Ready to Build
-            <br />
-            <span className="text-accent italic">Something?</span>
-          </h2>
-          <p className="mt-6 max-w-lg font-body text-base text-paper/50 leading-relaxed">
-            Available for full-time remote roles with EST timezone overlap. 
-            Senior-level frontend positions in product-driven SaaS companies welcome.
-          </p>
-        </motion.div>
+      <motion.div
+  ref={ref}
+  initial={{ opacity: 0, y: 20 }}
+  animate={inView ? { opacity: 1, y: 0 } : {}}
+  transition={{ duration: 0.8 }}
+  className="mb-16"
+>
+  <span className="font-mono text-[11px] tracking-[0.3em] uppercase text-accent mb-4 block">
+    05 — Get In Touch
+  </span>
+
+  <h2 className="font-display text-5xl md:text-7xl font-light text-paper leading-tight whitespace-nowrap">
+    Ready to Build{" "}
+    <span className="text-accent italic">Something?</span>
+  </h2>
+
+  <p className="mt-6 max-w-xl font-body text-base text-paper/60 leading-relaxed">
+    I'm open to full-time remote opportunities where I can contribute to building 
+    scalable, high-performance frontend applications. I enjoy working on product-driven 
+    SaaS platforms, focusing on clean architecture, performance optimization, and 
+    delivering seamless user experiences.
+  </p>
+</motion.div>
 
         <div className="grid md:grid-cols-3 gap-4 mb-14">
           {contacts.map((c, i) => (

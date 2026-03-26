@@ -21,7 +21,7 @@ export default function Marquee() {
   const doubled = [...items, ...items];
 
   return (
-    <div className="border-y border-white/5 py-5 overflow-hidden my-4 bg-surface/40">
+<div className="border-y border-white/5 py-5 overflow-hidden bg-surface/40 -mt-16 relative z-10">
       <div className="marquee-inner flex gap-12 whitespace-nowrap w-max">
         {doubled.map((item, i) => (
           <span

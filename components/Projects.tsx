@@ -3,38 +3,70 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
 
-const projects = [
-  {
-    number: "01",
-    title: "Quick-Sale",
-    subtitle: "E-Commerce Platform",
-    description:
-      "Scalable modular e-commerce frontend with 30+ reusable components translated from Figma. Multilingual i18n support, WCAG 2.1 accessibility, and advanced search/filtering for improved conversion flow.",
-    tech: ["React.js", "TypeScript", "i18n", "WCAG 2.1", "REST API"],
-    accent: "#E8572A",
-    stat: "30+ components",
-  },
-  {
-    number: "02",
-    title: "Only-Jewels",
-    subtitle: "MERN Stack E-Commerce",
-    description:
-      "Full-stack MERN e-commerce app with SSR, Webpack bundle optimization via code splitting & lazy loading. SEO-optimised, fully responsive cross-device experience with modular UI architecture.",
-    tech: ["React.js", "Node.js", "MongoDB", "Webpack", "SSR"],
-    accent: "#C9A84C",
-    stat: "40% faster load",
-  },
-  {
-    number: "03",
-    title: "AI-Enhanced Feature",
-    subtitle: "LLM-Powered Prototype",
-    description:
-      "AI-powered search & content recommendation prototype integrating external LLM APIs. Contextual UI interactions and intelligent suggestions measurably improved user engagement metrics.",
-    tech: ["React.js", "LLM API", "Context API", "AI/UX"],
-    accent: "#7B68EE",
-    stat: "LLM Integrated",
-  },
-];
+const projects = 
+  [
+    {
+      number: "01",
+      title: "Quick-Sale",
+      subtitle: "E-Commerce Platform",
+      description:
+        "Scalable modular e-commerce frontend with 30+ reusable components translated from Figma. Multilingual i18n support, WCAG 2.1 accessibility, and advanced search/filtering for improved conversion flow.",
+      tech: ["React.js", "TypeScript", "i18n", "WCAG 2.1", "REST API"],
+      accent: "#E8572A",
+      stat: "30+ components",
+    },
+    {
+      number: "02",
+      title: "Only-Jewels",
+      subtitle: "MERN Stack E-Commerce",
+      description:
+        "Full-stack MERN e-commerce app with SSR, Webpack bundle optimization via code splitting & lazy loading. SEO-optimised, fully responsive cross-device experience with modular UI architecture.",
+      tech: ["React.js", "Node.js", "MongoDB", "Webpack", "SSR"],
+      accent: "#C9A84C",
+      stat: "40% faster load",
+    },
+    {
+      number: "03",
+      title: "Teachmint",
+      subtitle: "EdTech Dashboard & LMS",
+      description:
+        "Built scalable teacher dashboard and LMS modules with role-based access, real-time class management, and performance tracking. Optimised rendering and state management improved app responsiveness for high concurrent users.",
+      tech: ["React.js", "Redux Toolkit", "WebSockets", "REST API"],
+      accent: "#4CAF50",
+      stat: "High concurrency",
+    },
+    {
+      number: "04",
+      title: "Healthcare Admin Panel",
+      subtitle: "Patient & Workflow Management",
+      description:
+        "Developed enterprise healthcare dashboard for patient records, appointment scheduling, and workflow tracking. Implemented secure APIs, role-based permissions, and optimized data tables for large datasets.",
+      tech: ["React.js", "TypeScript", "GraphQL", "Material UI"],
+      accent: "#FF6B6B",
+      stat: "Secure & scalable",
+    },
+    {
+      number: "05",
+      title: "Microfrontend Dashboard",
+      subtitle: "Modular Enterprise UI",
+      description:
+        "Designed microfrontend architecture using module federation enabling independent deployments across teams. Improved scalability and reduced release cycle dependencies in large-scale application.",
+      tech: ["React.js", "Microfrontends", "Webpack Module Federation"],
+      accent: "#6C5CE7",
+      stat: "Independent deploys",
+    },
+    {
+      number: "06",
+      title: "Performance Optimisation Suite",
+      subtitle: "Core Web Vitals Improvement",
+      description:
+        "Optimised large-scale React applications using code splitting, lazy loading, memoization, and bundle analysis. Improved Core Web Vitals (LCP, CLS, FID) leading to better SEO and user experience.",
+      tech: ["React.js", "Web Vitals", "Webpack", "Lighthouse"],
+      accent: "#00B894",
+      stat: "50% faster load",
+    }
+  ]
+
 
 function ProjectCard({ proj, index }: { proj: (typeof projects)[0]; index: number }) {
   const ref = useRef(null);
@@ -109,7 +141,7 @@ export default function Projects() {
   const inView = useInView(ref, { once: true });
 
   return (
-    <section id="projects" className="py-32 px-6">
+    <section id="projects" className="py-12 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}
@@ -118,7 +150,7 @@ export default function Projects() {
           transition={{ duration: 0.8 }}
           className="mb-16"
         >
-          <span className="font-mono text-[11px] tracking-[0.3em] uppercase text-accent mb-4 block">
+          <span className="font-mono text-[11px] tracking-[0.3em] uppercase text-accent mb-4 block -mt-34">
             04 — Selected Work
           </span>
           <h2 className="font-display text-5xl md:text-7xl font-light text-paper leading-tight">

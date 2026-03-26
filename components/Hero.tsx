@@ -470,6 +470,7 @@ const fadeUp = {
   },
 };
 
+
 // ── Hero ─────────────────────────────────────────────────────────────
 export default function Hero() {
   const { scrollY } = useScroll();
@@ -479,9 +480,6 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden px-4 sm:px-6 md:px-10">
       <ParticleCanvas />
-      <div className="absolute inset-0 bg-gradient-to-b from-ink/60 via-transparent to-ink/80 pointer-events-none z-[1]" />
-      <div className="absolute top-0 left-0 w-[600px] h-[200px] bg-accent/8 rounded-full blur-[150px] pointer-events-none z-[1]" />
-
       <motion.div style={{ y, opacity }} className="relative z-10 w-full">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-0">
           {/* LEFT — Text content */}
@@ -499,25 +497,25 @@ export default function Hero() {
             </motion.div>
 
             <motion.div variants={fadeUp} className="mb-4">
-              <h1
-                className="font-display font-light leading-[0.85] tracking-tight text-paper whitespace-normal break-words"
-                style={{ fontSize: "clamp(2.8rem, 7vw, 7.5rem)" }}
-              >
-                Kanupriya{" "}
-                <span className="text-accent italic relative inline-block">
-                  Pal
-                  <motion.span
-                    className="absolute -bottom-2 left-0 h-[2px] bg-accent rounded-full"
-                    initial={{ width: 0 }}
-                    animate={{ width: "100%" }}
-                    transition={{
-                      delay: 1.4,
-                      duration: 0.8,
-                      ease: [0.23, 1, 0.32, 1],
-                    }}
-                  />
-                </span>
-              </h1>
+            <h1
+  className="font-display font-light leading-[0.85] tracking-tight text-paper whitespace-nowrap"
+  style={{ fontSize: "clamp(2.8rem, 7vw, 7.5rem)" }}
+>
+  Kanupriya{" "}
+  <span className="text-accent italic relative inline-block">
+    Pal
+    <motion.span
+      className="absolute -bottom-2 left-0 h-[2px] bg-accent rounded-full"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      transition={{
+        delay: 1.4,
+        duration: 0.8,
+        ease: [0.23, 1, 0.32, 1],
+      }}
+    />
+  </span>
+</h1>
             </motion.div>
 
             <motion.p
@@ -529,12 +527,10 @@ export default function Hero() {
 
             <motion.p
               variants={fadeUp}
-              className="max-w-lg font-body text-base md:text-lg text-paper/55 leading-relaxed mb-10"
+              className="max-w-lg font-body text-base md:text-base text-paper/55 leading-relaxed mb-4"
             >
-              I architect performant, accessible frontend systems that ship to
-              production. 5+ years delivering 35–40% performance gains,
-              microfrontend libraries, and design systems for SaaS teams —
-              remotely.
+             I architect scalable, high-performance frontend systems with a strong focus on accessibility and user experience. 
+             Over 5+ years, I’ve driven 35–40% performance gains, built microfrontend ecosystems, and developed robust design systems for SaaS products — working seamlessly with remote teams.Frontend Developer based in India, available for remote opportunities worldwide.
             </motion.p>
 
             <motion.div
