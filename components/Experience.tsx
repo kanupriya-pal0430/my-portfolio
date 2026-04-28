@@ -6,7 +6,7 @@ const experiences = [
   {
     role: "Senior Frontend Engineer",
     level: "SDE III",
-    company: "ITR Consulting",
+    company: "Infosol Technosol",
     period: "Apr 2025 — Present",
     type: "USA Remote",
     highlights: [
