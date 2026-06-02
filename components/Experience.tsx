@@ -152,7 +152,7 @@ export default function Experience() {
             <p className="font-display text-2xl text-paper font-light">Master of Computer Applications (MCA)</p>
           </div>
           <span className="font-mono text-[13px] text-gold/70 bg-gold/5 border border-gold/15 px-4 py-2 rounded-full">
-            CGPA: 9.56 / 10
+            CGPA: 8.6 / 10
           </span>
         </motion.div>
       </div>

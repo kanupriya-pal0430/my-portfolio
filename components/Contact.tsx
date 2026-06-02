@@ -4,9 +4,9 @@ import { useRef } from "react";
 import { Mail, Linkedin, Phone } from "lucide-react";
 
 const contacts = [
-  { icon: Mail, label: "Email", value: "kanupriyapal031996@gmail.com", href: "mailto:kanupriyapal031996@gmail.com" },
+  { icon: Mail, label: "Email", value: "palkanupriya78@gmail.com", href: "mailto:palkanupriya78@gmail.com" },
   { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/kanupriya-pal", href: "https://linkedin.com/in/kanupriya-pal" },
-  { icon: Phone, label: "Phone", value: "+91 9770478602", href: "tel:+919770478602" },
+  { icon: Phone, label: "Phone", value: "+91 9770478602, +91 9244096046", href: "tel:+919770478602" },
 ];
 
 export default function Contact() {
