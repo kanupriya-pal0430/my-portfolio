@@ -3,70 +3,96 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
 
-const projects = 
-  [
-    {
-      number: "01",
-      title: "Quick-Sale",
-      subtitle: "E-Commerce Platform",
-      description:
-        "Scalable modular e-commerce frontend with 30+ reusable components translated from Figma. Multilingual i18n support, WCAG 2.1 accessibility, and advanced search/filtering for improved conversion flow.",
-      tech: ["React.js", "TypeScript", "i18n", "WCAG 2.1", "REST API"],
-      accent: "#E8572A",
-      stat: "30+ components",
-    },
-    {
-      number: "02",
-      title: "Only-Jewels",
-      subtitle: "MERN Stack E-Commerce",
-      description:
-        "Full-stack MERN e-commerce app with SSR, Webpack bundle optimization via code splitting & lazy loading. SEO-optimised, fully responsive cross-device experience with modular UI architecture.",
-      tech: ["React.js", "Node.js", "MongoDB", "Webpack", "SSR"],
-      accent: "#C9A84C",
-      stat: "40% faster load",
-    },
-    {
-      number: "03",
-      title: "Teachmint",
-      subtitle: "EdTech Dashboard & LMS",
-      description:
-        "Built scalable teacher dashboard and LMS modules with role-based access, real-time class management, and performance tracking. Optimised rendering and state management improved app responsiveness for high concurrent users.",
-      tech: ["React.js", "Redux Toolkit", "WebSockets", "REST API"],
-      accent: "#4CAF50",
-      stat: "High concurrency",
-    },
-    {
-      number: "04",
-      title: "Healthcare Admin Panel",
-      subtitle: "Patient & Workflow Management",
-      description:
-        "Developed enterprise healthcare dashboard for patient records, appointment scheduling, and workflow tracking. Implemented secure APIs, role-based permissions, and optimized data tables for large datasets.",
-      tech: ["React.js", "TypeScript", "GraphQL", "Material UI"],
-      accent: "#FF6B6B",
-      stat: "Secure & scalable",
-    },
-    {
-      number: "05",
-      title: "Microfrontend Dashboard",
-      subtitle: "Modular Enterprise UI",
-      description:
-        "Designed microfrontend architecture using module federation enabling independent deployments across teams. Improved scalability and reduced release cycle dependencies in large-scale application.",
-      tech: ["React.js", "Microfrontends", "Webpack Module Federation"],
-      accent: "#6C5CE7",
-      stat: "Independent deploys",
-    },
-    {
-      number: "06",
-      title: "Performance Optimisation Suite",
-      subtitle: "Core Web Vitals Improvement",
-      description:
-        "Optimised large-scale React applications using code splitting, lazy loading, memoization, and bundle analysis. Improved Core Web Vitals (LCP, CLS, FID) leading to better SEO and user experience.",
-      tech: ["React.js", "Web Vitals", "Webpack", "Lighthouse"],
-      accent: "#00B894",
-      stat: "50% faster load",
-    }
-  ]
+const projects = [
+  {
+    number: "01",
+    title: "Reach plc Storefront",
+    subtitle: "🇬🇧 UK · Multi-Brand News & Subscription Platform",
+    description:
+      "Built scalable subscription storefronts across 12+ UK news brands using reusable global templates, responsive UI patterns and publication-specific configurations.",
+    tech: [
+      "React.js",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Micro Frontends",
+      "Responsive Design",
+    ],
+    accent: "#E8572A",
+    stat: "12+ publications",
+  },
 
+  {
+    number: "02",
+    title: "Quick-Sale",
+    subtitle: "🇬🇧 UK · E-Commerce Platform",
+    description:
+      "Built a modular e-commerce frontend with 30+ reusable components, multilingual i18n support, WCAG accessibility and advanced product filtering.",
+    tech: ["React.js", "TypeScript", "i18n", "WCAG 2.1", "REST API"],
+    accent: "#C9A84C",
+    stat: "30+ components",
+  },
+
+  {
+    number: "03",
+    title: "Only-Jewels",
+    subtitle: "🌍 Global · Luxury Jewellery E-Commerce",
+    description:
+      "Developed a full-stack MERN commerce platform with SSR, code splitting, lazy loading and responsive UI architecture for faster cross-device performance.",
+    tech: ["React.js", "Node.js", "MongoDB", "Webpack", "SSR"],
+    accent: "#6C5CE7",
+    stat: "40% faster load",
+  },
+
+  {
+    number: "04",
+    title: "Teachmint",
+    subtitle: "🇮🇳 India · EdTech & Learning Platform",
+    description:
+      "Built scalable teacher dashboard and LMS modules with role-based access, real-time class management and optimized application state.",
+    tech: ["React.js", "Redux Toolkit", "WebSockets", "REST API"],
+    accent: "#4CAF50",
+    stat: "High concurrency",
+  },
+
+  {
+    number: "05",
+    title: "Healthcare Admin Panel",
+    subtitle: "🇺🇸 USA · Healthcare Management Platform",
+    description:
+      "Developed an enterprise healthcare dashboard with secure APIs, role-based permissions and optimized data tables for large operational datasets.",
+    tech: ["React.js", "TypeScript", "GraphQL", "Material UI"],
+    accent: "#FF6B6B",
+    stat: "Enterprise scale",
+  },
+
+  {
+    number: "06",
+    title: "Microfrontend Platform",
+    subtitle: "🌐 Enterprise · Modular Frontend Architecture",
+    description:
+      "Designed a modular microfrontend architecture enabling independent deployments, shared UI foundations and reduced cross-team release dependencies.",
+    tech: [
+      "React.js",
+      "Microfrontends",
+      "Webpack Module Federation",
+      "Shared State",
+    ],
+    accent: "#0984E3",
+    stat: "Independent deploys",
+  },
+
+  {
+    number: "07",
+    title: "Frontend Performance Suite",
+    subtitle: "⚡ Frontend · Core Web Vitals Optimisation",
+    description:
+      "Improved React performance using code splitting, lazy loading, memoization and bundle analysis to reduce load times and improve Core Web Vitals.",
+    tech: ["React.js", "Web Vitals", "Webpack", "Lighthouse"],
+    accent: "#00B894",
+    stat: "50% faster load",
+  },
+];
 
 function ProjectCard({ proj, index }: { proj: (typeof projects)[0]; index: number }) {
   const ref = useRef(null);
